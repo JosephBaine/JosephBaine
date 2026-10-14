@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic website of Your Name: research, publications, teaching and contact information.">
+  <title>Your Name | Academic Website</title>
+  <style>
+    :root { --ink:#23354b; --muted:#536578; --link:#205e9e; --line:#e3e9ef; --bg:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--link); }
+    a:hover { text-decoration-thickness:2px; }
+    .wrap { max-width:920px; margin:auto; padding:0 24px; }
+    header { border-bottom:1px solid var(--line); }
+    nav { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+    nav .brand { font-size:1.1rem; font-weight:700; color:var(--ink); text-decoration:none; }
+    nav .links { display:flex; flex-wrap:wrap; gap:16px; }
+    nav .links a { text-decoration:none; font-size:.92rem; }
+    .hero { padding:74px 0 55px; display:flex; align-items:center; justify-content:space-between; gap:40px; }
+    h1 { font-size:clamp(2.3rem,6vw,3.4rem); line-height:1.16; margin:0 0 12px; letter-spacing:-.04em; }
+    h2 { font-size:1.45rem; line-height:1.3; margin:0 0 17px; }
+    h3 { font-size:1.05rem; margin:0 0 4px; }
+    p { margin:0 0 16px; }
+    .role { color:var(--muted); font-weight:600; }
+    .intro { max-width:590px; }
+    .portrait { width:170px; height:170px; border-radius:50%; object-fit:cover; background:#edf2f7; }
+    .avatar { width:170px; height:170px; border-radius:50%; display:grid; place-items:center; background:#edf2f7; color:#788da1; flex-shrink:0; font-size:3.5rem; }
+    .quicklinks { display:flex; flex-wrap:wrap; gap:16px; margin-top:20px; }
+    section { padding:34px 0; border-top:1px solid var(--line); scroll-margin-top:30px; }
+    .tags { display:flex; flex-wrap:wrap; gap:9px; }
+    .tag { background:#eef3f8; color:#304b65; border-radius:25px; padding:5px 12px; font-size:.89rem; }
+    .publication { margin:0 0 24px; }
+    .publication p { color:var(--muted); font-size:.95rem; margin:0 0 3px; }
+    .small { color:var(--muted); font-size:.95rem; }
+    footer { border-top:1px solid var(--line); padding:24px 0 45px; color:var(--muted); font-size:.85rem; }
+    @media(max-width:650px) { .hero { padding-top:45px; flex-direction:column-reverse; align-items:flex-start; gap:22px; } .avatar,.portrait { width:110px; height:110px; font-size:2.4rem; } nav { padding:14px 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="brand" href="#home">Your Name</a>
+      <div class="links">
+        <a href="#about">About</a><a href="#research">Research</a>
+        <a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wrap">
+    <div class="hero" id="home">
+      <div class="intro">
+        <h1>Your Name</h1>
+        <p class="role">PhD Student / Researcher · Department · University</p>
+        <p>I study [your research area], with interests in [topic one] and [topic two]. Welcome to my academic website.</p>
+        <div class="quicklinks">
+          <a href="cv.pdf">Download CV</a>
+          <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <a href="mailto:your.email@university.edu">Email me</a>
+        </div>
+      </div>
+      <!-- Replace this placeholder with: <img class="portrait" src="profile.jpg" alt="Portrait of Your Name"> -->
+      <div class="avatar" aria-hidden="true">YN</div>
+    </div>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a [position] in the [department] at [university]. My research examines [main research question]. I am particularly interested in [methods or themes] and how they relate to [broader impact].</p>
+      <p>Previously, I studied [degree or previous experience]. Outside research, I enjoy [optional personal interest].</p>
+    </section>
+    <section id="research">
+      <h2>Research Interests</h2>
+      <div class="tags"><span class="tag">Research Area One</span><span class="tag">Research Area Two</span><span class="tag">Research Area Three</span></div>
+      <p style="margin-top:18px">My current project explores [project description]. The goal is to better understand [why the research matters].</p>
+    </section>
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <article class="publication">
+        <h3>Title of Your Publication (2026)</h3>
+        <p>Your Name, Collaborator Name · Journal or Conference Name</p>
+        <a href="https://doi.org/" target="_blank" rel="noopener noreferrer">DOI / Paper link</a>
+      </article>
+      <article class="publication">
+        <h3>Another Paper or Working Paper (2025)</h3>
+        <p>Your Name, Coauthor Name · Working paper</p>
+        <a href="https://example.com/" target="_blank" rel="noopener noreferrer">Read paper</a>
+      </article>
+      <p class="small">If you do not have publications yet, replace this section with “Research Projects” or “Work in Progress.”</p>
+    </section>
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <p><strong>Course Name</strong> — Teaching Assistant, University, 2026</p>
+      <p class="small">You can also list mentoring, workshops, talks, or outreach here.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For research questions, collaborations, or speaking invitations, email <a href="mailto:your.email@university.edu">your.email@university.edu</a>.</p>
+      <p>Department · University · City, Country</p>
+    </section>
+  </main>
+  <footer><div class="wrap">© 2026 Your Name · Hosted on GitHub Pages</div></footer>
+</body>
+</html>
